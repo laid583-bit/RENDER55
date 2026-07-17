@@ -1,0 +1,27 @@
+2026-04-28 06:52:04,158 - main - INFO - === Logging system initialized ===
+2026-04-28 06:52:04,159 - main - INFO - Log file: logs/app_20260428_065204.log
+2026-04-28 06:52:04,160 - main - INFO - Log level: INFO
+2026-04-28 06:52:04,160 - main - INFO - Timestamp: 20260428_065204
+2026-04-28 06:52:04,176 - main - WARNING - Failed to import module 'routers.aihub': cannot import name 'AnalyzePdfRequest' from 'schemas.aihub' (/workspace/app/backend/schemas/aihub.py)
+2026-04-28 06:52:04,231 - main - INFO - Included router: routers.auth.router
+2026-04-28 06:52:04,287 - main - INFO - Included router: routers.conversions.router
+2026-04-28 06:52:04,338 - main - INFO - Included router: routers.currency_pairs.router
+2026-04-28 06:52:04,388 - main - INFO - Included router: routers.deposits.router
+2026-04-28 06:52:04,438 - main - INFO - Included router: routers.expert_tasks.router
+2026-04-28 06:52:04,481 - main - INFO - Included router: routers.fee_settings.router
+2026-04-28 06:52:04,483 - main - INFO - Included router: routers.health.router
+2026-04-28 06:52:04,527 - main - INFO - Included router: routers.payments.router
+2026-04-28 06:52:04,558 - main - INFO - Included router: routers.rates.router
+2026-04-28 06:52:04,583 - main - INFO - Included router: routers.settings.router
+2026-04-28 06:52:04,630 - main - INFO - Included router: routers.storage.router
+2026-04-28 06:52:04,641 - main - INFO - Included router: routers.user.router
+2026-04-28 06:52:04,691 - main - INFO - Included router: routers.user_balances.router
+2026-04-28 06:52:04,746 - main - INFO - Included router: routers.withdrawals.router
+2026-04-28 06:52:04,835 - main - INFO - === Application startup initiated ===
+2026-04-28 06:52:04,835 - services.database - INFO - Ignore creating tables
+2026-04-28 06:52:04,835 - services.mock_data - INFO - Ignore initialize data
+2026-04-28 06:52:04,836 - services.auth - INFO - Ignore initialize admin
+2026-04-28 06:52:04,836 - main - INFO - === Application startup completed successfully ===
+2026-04-28 06:52:05,138 - services.database - DEBUG - [DB_OP] Starting database close
+2026-04-28 06:52:05,138 - services.database - INFO - Database connections closed
+2026-04-28 06:52:05,138 - services.database - DEBUG - [DB_OP] Database close completed in 0.0003s

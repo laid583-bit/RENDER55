@@ -1,0 +1,32 @@
+{
+    "title": "currency_pairs",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer",
+            "description": "Primary key, auto-increment"
+        },
+        "base_currency": {
+            "type": "string",
+            "description": "Base currency code"
+        },
+        "quote_currency": {
+            "type": "string",
+            "description": "Quote currency code"
+        },
+        "pair_name": {
+            "type": "string",
+            "description": "Display name e.g. XAU/USD"
+        },
+        "is_active": {
+            "type": "boolean",
+            "description": "Whether this pair is active"
+        }
+    },
+    "required": [
+        "id",
+        "base_currency",
+        "quote_currency",
+        "pair_name"
+    ]
+}

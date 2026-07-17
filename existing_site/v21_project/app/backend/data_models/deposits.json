@@ -1,0 +1,51 @@
+{
+    "title": "deposits",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer",
+            "description": "Primary key, auto-increment"
+        },
+        "user_id": {
+            "type": "string",
+            "description": "User ID"
+        },
+        "amount": {
+            "type": "number",
+            "description": "Deposit amount"
+        },
+        "currency": {
+            "type": "string",
+            "description": "Currency code (USD, EUR, GBP)"
+        },
+        "payment_method": {
+            "type": "string",
+            "description": "Payment method ID"
+        },
+        "wallet_address": {
+            "type": "string",
+            "description": "Wallet address or account details"
+        },
+        "status": {
+            "type": "string",
+            "description": "Status: pending, completed, rejected"
+        },
+        "notes": {
+            "type": "string",
+            "description": "Additional notes"
+        },
+        "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Creation timestamp"
+        }
+    },
+    "required": [
+        "id",
+        "user_id",
+        "amount",
+        "currency",
+        "payment_method",
+        "status"
+    ]
+}

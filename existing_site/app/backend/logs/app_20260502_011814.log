@@ -1,0 +1,28 @@
+2026-05-02 01:18:14,094 - main - INFO - === Logging system initialized ===
+2026-05-02 01:18:14,095 - main - INFO - Log file: logs/app_20260502_011814.log
+2026-05-02 01:18:14,095 - main - INFO - Log level: INFO
+2026-05-02 01:18:14,095 - main - INFO - Timestamp: 20260502_011814
+2026-05-02 01:18:14,107 - main - WARNING - Failed to import module 'routers.aihub': cannot import name 'AnalyzePdfRequest' from 'schemas.aihub' (/workspace/app/backend/schemas/aihub.py)
+2026-05-02 01:18:14,151 - main - INFO - Included router: routers.auth.router
+2026-05-02 01:18:14,201 - main - INFO - Included router: routers.conversions.router
+2026-05-02 01:18:14,242 - main - INFO - Included router: routers.currency_pairs.router
+2026-05-02 01:18:14,287 - main - INFO - Included router: routers.deposits.router
+2026-05-02 01:18:14,334 - main - INFO - Included router: routers.expert_tasks.router
+2026-05-02 01:18:14,373 - main - INFO - Included router: routers.fee_settings.router
+2026-05-02 01:18:14,375 - main - INFO - Included router: routers.health.router
+2026-05-02 01:18:14,398 - main - INFO - Included router: routers.payments.router
+2026-05-02 01:18:14,407 - main - INFO - Included router: routers.rates.router
+2026-05-02 01:18:14,426 - main - INFO - Included router: routers.settings.router
+2026-05-02 01:18:14,458 - main - INFO - Included router: routers.storage.router
+2026-05-02 01:18:14,500 - main - INFO - Included router: routers.sub_admins.router
+2026-05-02 01:18:14,511 - main - INFO - Included router: routers.user.router
+2026-05-02 01:18:14,550 - main - INFO - Included router: routers.user_balances.router
+2026-05-02 01:18:14,655 - main - INFO - Included router: routers.withdrawals.router
+2026-05-02 01:18:14,656 - main - INFO - === Application startup initiated ===
+2026-05-02 01:18:14,656 - services.database - INFO - Ignore creating tables
+2026-05-02 01:18:14,656 - services.mock_data - INFO - Ignore initialize data
+2026-05-02 01:18:14,656 - services.auth - INFO - Ignore initialize admin
+2026-05-02 01:18:14,656 - main - INFO - === Application startup completed successfully ===
+2026-05-02 01:18:38,653 - services.database - DEBUG - [DB_OP] Starting database close
+2026-05-02 01:18:38,653 - services.database - INFO - Database connections closed
+2026-05-02 01:18:38,653 - services.database - DEBUG - [DB_OP] Database close completed in 0.0003s

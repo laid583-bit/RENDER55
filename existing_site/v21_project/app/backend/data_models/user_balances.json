@@ -1,0 +1,33 @@
+{
+    "title": "user_balances",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer",
+            "description": "Primary key, auto-increment"
+        },
+        "user_id": {
+            "type": "string",
+            "description": "User ID"
+        },
+        "currency": {
+            "type": "string",
+            "description": "Currency code"
+        },
+        "balance": {
+            "type": "number",
+            "description": "Current balance"
+        },
+        "updated_at": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Last update timestamp"
+        }
+    },
+    "required": [
+        "id",
+        "user_id",
+        "currency",
+        "balance"
+    ]
+}

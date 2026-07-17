@@ -1,0 +1,51 @@
+
+  throw err;
+  ^
+Error: Cannot find module '@noble/secp256k1'
+Require stack:
+- /opt/render/project/src/app/bot/node_modules/tronweb/dist/TronWeb.node.js
+- /opt/render/project/src/app/bot/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1569:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1123:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1147:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1174:12)
+    at Module._load (node:internal/modules/cjs/loader:1346:5)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:261:19)
+    at Module.require (node:internal/modules/cjs/loader:1679:12)
+    at require (node:internal/modules/helpers:196:16)
+    at /opt/render/project/src/app/bot/node_modules/tronweb/dist/TronWeb.node.js:1:296544
+    at /opt/render/project/src/app/bot/node_modules/tronweb/dist/TronWeb.node.js:1:697113 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/opt/render/project/src/app/bot/node_modules/tronweb/dist/TronWeb.node.js',
+    '/opt/render/project/src/app/bot/server.js'
+  ]
+}
+Node.js v26.5.0
+==> Exited with status 1
+==> Common ways to troubleshoot your deploy: https://render.com/docs/troubleshooting-deploys
+==> Running 'node server.js'
+node:internal/modules/cjs/loader:1573
+  throw err;
+  ^
+Error: Cannot find module '@noble/secp256k1'
+Require stack:
+- /opt/render/project/src/app/bot/node_modules/tronweb/dist/TronWeb.node.js
+- /opt/render/project/src/app/bot/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1569:15)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1123:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1147:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1174:12)
+    at Module._load (node:internal/modules/cjs/loader:1346:5)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:261:19)
+    at Module.require (node:internal/modules/cjs/loader:1679:12)
+    at require (node:internal/modules/helpers:196:16)
+    at /opt/render/project/src/app/bot/node_modules/tronweb/dist/TronWeb.node.js:1:296544
+    at /opt/render/project/src/app/bot/node_modules/tronweb/dist/TronWeb.node.js:1:697113 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/opt/render/project/src/app/bot/node_modules/tronweb/dist/TronWeb.node.js',
+    '/opt/render/project/src/app/bot/server.js'
+  ]
+}
+Node.js v26.5.0

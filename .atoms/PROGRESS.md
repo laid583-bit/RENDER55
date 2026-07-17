@@ -1,0 +1,105 @@
+# Requirements & Progress
+
+## Requirements Overview
+Build a BSC token swap DEX web application with currency conversion, multiple payment methods, admin management, and Arabic RTL interface. No slippage or fees on crypto swaps, fixed fee on currency conversion.
+
+## User Stories
+- As a user, I can swap BEP-20 tokens on BSC without slippage or fees
+- As a user, I can convert between fiat and crypto currencies with a fixed fee
+- As a user, I can deposit/withdraw using multiple payment methods including بريدي موب
+- As a user, I can connect my wallet to interact with the DEX
+- As an admin, I can manage sub-administrators and fee settings
+- As a user, I can view token information and smart contract details
+
+## Task Breakdown
+- [x] Initialize project with React + TypeScript + Tailwind CSS
+- [x] Create main pages (Index, Token, Converter, Admin, Banks, Deposit, Withdraw)
+- [x] Implement token swap interface
+- [x] Add wallet connection feature
+- [x] Build currency converter with live rates
+- [x] Implement fixed fee system (replacing percentage fees)
+- [x] Add sub-admin management page
+- [x] Remove slippage from token swap
+- [x] Remove buyTax/sellTax from smart contract
+- [x] Remove spread from currency conversion
+- [x] Add "بريدي موب" to deposit, withdraw, and banks pages
+- [x] Switch token to Tron network (TRC-20) with TronLink wallet support
+- [x] Implement variable fees per currency pair (fixed + percentage)
+- [x] Create auto-conversion bot script (bot.js) with config
+- [x] Create API server (server.js) for receiving/serving bot data
+- [x] Add BotConversions page in frontend
+- [x] Add bot navigation link in Header
+- [x] Write README with VPS deployment instructions (PM2, systemd)
+- [x] Convert bot to Telegram bot (node-telegram-bot-api) with 24/7 operation
+- [x] Add PM2 ecosystem config for auto-restart
+- [x] Add systemd service instructions in README
+- [x] Restructure bot: remove random conversions, bot only sends requests to website
+- [x] Website executes conversions inside wallets, applies fees
+- [x] Support any currency added from admin panel
+- [x] Support bidirectional conversion (TRX ⇄ USDT)
+- [x] Conversion cycle every 5 seconds (configurable)
+- [x] Add settings: reverse conversion, no repeat pair, execution order
+- [x] Manage currencies and pairs from admin panel
+- [x] Show request status (pending, completed, rejected)
+- [x] Save all operations with TXID
+- [x] Secure bot-website connection with API Key
+- [x] Bot does not hold private keys or execute conversions
+- [x] Change homepage to Admin Login page with credential change option
+- [x] Fix Admin Panel - Pairs & Fees with localStorage persistence
+- [x] Fix Admin Panel - Deposit & Withdrawal request management
+- [x] Fix Banks/payment methods in Deposit and Withdraw pages
+- [x] Fix SubAdmins page to use localStorage (add/edit/delete works)
+- [x] Remove default conversions - pages start empty with real data only
+- [x] Add USDT currency to Converter, rates-service, and all currency selectors
+- [x] Connect frontend to Bot API on Render (https://tbb-jchj.onrender.com)
+- [x] Fix BotConversions to read pairs from localStorage (same source as Admin panel)
+- [x] Add auto-sync pairs to bot API when Admin adds/deletes/toggles pairs
+- [x] Fix Profits page to fetch data from Bot API instead of non-existent entities
+- [x] Add dynamic system config settings (target_spread, admin_gas_fee, actual_energy_cost) to Admin Panel
+- [x] Add /api/config GET/POST endpoints to Bot API for system configuration
+- [x] Implement dynamic profit calculation formula in conversion processing
+- [x] Show profit breakdown (spread, gas profit, liquidity) per conversion in Profits page
+- [x] Save detailed profit records to profits.json with full breakdown
+- [x] Add retry mechanism to bot.js (3 retries, 3s delay on timeout/502/503)
+- [x] Verify bot payload is clean (no gas/spread/profit values sent from bot)
+- [x] Add profit_breakdown response logging in bot (server handles all calculations)
+- [x] Remove old "إعدادات الرسوم" (fees) tab completely from Admin panel
+- [x] Update System Config labels to exact Arabic naming (فارق السعر المستهدف الصافي, فارق الغاز, تكلفة استئجار الطاقة الفعلية)
+- [x] Fix profit formula display - remove pip/10000 division, use direct $ values
+- [x] Integrate PoolWalletSection component in Admin panel with real-time TRX/USDT balance fetching
+- [x] Implement deposit monitoring (event listening for TRX/USDT on-chain deposits to pool wallet)
+- [x] Implement automated withdrawal signing and processing (TRX & USDT TRC-20)
+- [x] Add deposit/withdrawal API endpoints (GET/POST /api/deposits, POST /api/withdraw, GET /api/withdrawals)
+- [x] Update frontend Deposit page to show pool wallet address, auto-confirm deposits, track by sender
+- [x] Update frontend Withdraw page with withdrawal form, auto-processing, and live status tracking
+- [x] Integrate Bank Requests management tab in Admin panel with approve/reject actions
+- [x] Add Gas Guard alert in Bank Requests section for low TRX balance warnings
+- [x] Fix API_BASE_URL import issues in Deposit.tsx and Withdraw.tsx (use getAPIBaseURL())
+- [x] Add notification bell icon in Header with pending bank requests count badge
+- [x] Add toast notifications on bank request status changes (approve/reject) with details
+- [x] Add browser Notification API for new bank requests alerts
+- [x] Add polling every 15 seconds for new bank requests detection
+- [x] Add pending count badge on bank_requests tab trigger
+- [x] Fix Admin panel to read deposits/withdrawals from real API instead of localStorage
+- [x] Add PUT /api/deposits/:id and PUT /api/withdrawals/:id endpoints to server for admin approve/reject
+- [x] Add approve/reject buttons in Admin TransactionManager for deposits and withdrawals
+- [x] Integrate 5 payment gateways (Perfect Money, Stripe, PayPal, Binance Pay, Wise) into bot server
+- [x] Create payment-gateways.js module with all gateway endpoints
+- [x] Create gateway-helpers.js for shared deposit/withdrawal saving logic
+- [x] Update Deposit.tsx frontend to route to gateway APIs (Stripe, PayPal, Binance Pay, Perfect Money)
+- [x] Update Withdraw.tsx frontend to route to gateway APIs (Perfect Money, PayPal, Wise)
+- [x] Add /api/payments/status endpoint for gateway configuration status
+- [x] Add unified /api/payments/process router endpoint
+
+## Progress Log
+- 2026-03-23: Project initialized with git setup
+- 2026-05-12: DEX project created with core pages and components
+- 2026-05-12: BSC Token added to currency converter
+- 2026-05-12: Wallet connection feature implemented
+- 2026-05-12: Currency conversion fixed and fixed fee system added
+- 2026-05-12: Removed slippage, crypto fees, and spread; added بريدي موب payment method
+- 2026-05-14: Fixed bugs in Deposit/Withdraw pages: placeholder text, NaN validation, error handling for missing entities
+- 2026-06-13: Switched token to Tron network (TRC-20/TTB) with TronLink wallet support alongside BSC/MetaMask
+- 2026-06-13: Implemented variable fee system per currency pair (fixed amount + percentage) in Admin and Converter
+- 2026-06-17: Created auto-conversion bot (app/bot/) with API server, config, README for VPS deployment
+- 2026-06-17: Added BotConversions page to frontend with live stats and connection status

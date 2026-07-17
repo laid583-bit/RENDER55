@@ -1,0 +1,66 @@
+2026-04-28 07:18:04,725 - main - INFO - === Logging system initialized ===
+2026-04-28 07:18:04,725 - main - INFO - Log file: logs/app_20260428_071804.log
+2026-04-28 07:18:04,725 - main - INFO - Log level: INFO
+2026-04-28 07:18:04,725 - main - INFO - Timestamp: 20260428_071804
+2026-04-28 07:18:04,749 - main - WARNING - Failed to import module 'routers.aihub': cannot import name 'AnalyzePdfRequest' from 'schemas.aihub' (/workspace/app/backend/schemas/aihub.py)
+2026-04-28 07:18:04,818 - main - INFO - Included router: routers.auth.router
+2026-04-28 07:18:04,945 - main - INFO - Included router: routers.conversions.router
+2026-04-28 07:18:05,136 - main - INFO - Included router: routers.currency_pairs.router
+2026-04-28 07:18:05,294 - main - INFO - Included router: routers.deposits.router
+2026-04-28 07:18:05,444 - main - INFO - Included router: routers.expert_tasks.router
+2026-04-28 07:18:05,532 - main - INFO - Included router: routers.fee_settings.router
+2026-04-28 07:18:05,535 - main - INFO - Included router: routers.health.router
+2026-04-28 07:18:05,577 - main - INFO - Included router: routers.payments.router
+2026-04-28 07:18:05,618 - main - INFO - Included router: routers.rates.router
+2026-04-28 07:18:05,640 - main - INFO - Included router: routers.settings.router
+2026-04-28 07:18:05,676 - main - INFO - Included router: routers.storage.router
+2026-04-28 07:18:05,688 - main - INFO - Included router: routers.user.router
+2026-04-28 07:18:05,806 - main - INFO - Included router: routers.user_balances.router
+2026-04-28 07:18:05,956 - main - INFO - Included router: routers.withdrawals.router
+2026-04-28 07:18:05,958 - main - INFO - === Application startup initiated ===
+2026-04-28 07:18:05,958 - services.database - INFO - Ignore creating tables
+2026-04-28 07:18:05,958 - services.mock_data - INFO - Ignore initialize data
+2026-04-28 07:18:05,958 - services.auth - INFO - Ignore initialize admin
+2026-04-28 07:18:05,958 - main - INFO - === Application startup completed successfully ===
+2026-04-28 07:18:31,314 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-28 07:18:31,315 - core.database - WARNING - Database session maker not available, attempting lazy initialization...
+2026-04-28 07:18:31,316 - core.database - WARNING - Database not initialized, attempting lazy initialization...
+2026-04-28 07:18:31,317 - core.database - INFO - Starting database initialization...
+2026-04-28 07:18:31,317 - core.config - DEBUG - Read dynamic attribute database_url from environment variable DATABASE_URL
+2026-04-28 07:18:31,317 - core.database - INFO - Normalizing database URL for async compatibility...
+2026-04-28 07:18:31,318 - core.database - INFO - Creating async database engine...
+2026-04-28 07:18:31,318 - core.database - INFO - Using QueuePool with connection pooling for non-Lambda environment
+2026-04-28 07:18:31,377 - core.database - INFO - Database engine created successfully
+2026-04-28 07:18:31,377 - core.database - INFO - Creating async session maker...
+2026-04-28 07:18:31,377 - core.database - INFO - Async session maker created successfully
+2026-04-28 07:18:31,377 - core.database - INFO - Database connection initialized successfully
+2026-04-28 07:18:31,377 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-04-28 07:18:31,377 - core.database - INFO - 🔧 Starting table creation...
+2026-04-28 07:18:33,154 - core.database - INFO - Tables initialized successfully
+2026-04-28 07:18:33,155 - core.database - DEBUG - [DB_OP] Create tables completed in 1.7778s
+2026-04-28 07:18:33,218 - core.database - INFO - Lazy database initialization completed successfully
+2026-04-28 07:18:33,219 - core.database - DEBUG - [DB_OP] Database session created successfully in 1.9046s
+2026-04-28 07:18:33,862 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-28 07:18:33,863 - core.database - DEBUG - [DB_OP] Database session cleanup after 2.5483s
+2026-04-28 07:19:26,377 - dependencies.auth - DEBUG - Authentication required for request GET /api/v1/auth/me
+2026-04-28 07:19:26,378 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-28 07:19:26,380 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0018s
+2026-04-28 07:19:26,761 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-28 07:19:26,762 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3833s
+2026-04-28 07:19:31,556 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-28 07:19:31,557 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0005s
+2026-04-28 07:19:31,936 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-28 07:19:31,937 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3805s
+2026-04-28 07:20:50,335 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-28 07:20:50,335 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0005s
+2026-04-28 07:20:50,511 - dependencies.auth - DEBUG - Authentication required for request GET /api/v1/auth/me
+2026-04-28 07:20:50,513 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-28 07:20:50,513 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-04-28 07:20:50,776 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-28 07:20:50,777 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.4422s
+2026-04-28 07:20:51,267 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-28 07:20:51,268 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.7554s
+2026-04-28 07:21:00,969 - services.database - DEBUG - [DB_OP] Starting database close
+2026-04-28 07:21:01,100 - core.database - INFO - Database connection closed and engine disposed
+2026-04-28 07:21:01,100 - services.database - INFO - Database connections closed
+2026-04-28 07:21:01,100 - services.database - DEBUG - [DB_OP] Database close completed in 0.1312s

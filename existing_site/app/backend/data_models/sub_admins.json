@@ -1,0 +1,42 @@
+{
+    "title": "sub_admins",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer",
+            "description": "Primary key, auto-increment"
+        },
+        "user_id": {
+            "type": "string",
+            "description": "User ID from auth system"
+        },
+        "email": {
+            "type": "string",
+            "description": "Sub-admin email"
+        },
+        "name": {
+            "type": "string",
+            "description": "Sub-admin display name"
+        },
+        "permissions": {
+            "type": "string",
+            "description": "JSON string of permissions: view_deposits, view_withdrawals, approve_transactions, manage_fees, manage_pairs"
+        },
+        "is_active": {
+            "type": "boolean",
+            "description": "Whether the sub-admin account is active"
+        },
+        "notes": {
+            "type": "string",
+            "description": "Optional notes about this sub-admin"
+        }
+    },
+    "required": [
+        "id",
+        "user_id",
+        "email",
+        "name",
+        "permissions",
+        "is_active"
+    ]
+}

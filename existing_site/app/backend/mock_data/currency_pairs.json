@@ -1,0 +1,58 @@
+[
+    {
+        "base_currency": "XAU",
+        "quote_currency": "USD",
+        "pair_name": "XAU/USD",
+        "is_active": true,
+        "created_at": "2026-03-23 00:00:00"
+    },
+    {
+        "base_currency": "XAU",
+        "quote_currency": "EUR",
+        "pair_name": "XAU/EUR",
+        "is_active": true,
+        "created_at": "2026-03-23 00:00:00"
+    },
+    {
+        "base_currency": "USD",
+        "quote_currency": "BTC",
+        "pair_name": "USD/BTC",
+        "is_active": true,
+        "created_at": "2026-03-23 00:00:00"
+    },
+    {
+        "base_currency": "EUR",
+        "quote_currency": "BTC",
+        "pair_name": "EUR/BTC",
+        "is_active": true,
+        "created_at": "2026-03-23 00:00:00"
+    },
+    {
+        "base_currency": "GBP",
+        "quote_currency": "NZD",
+        "pair_name": "GBP/NZD",
+        "is_active": true,
+        "created_at": "2026-03-23 00:00:00"
+    },
+    {
+        "base_currency": "GBP",
+        "quote_currency": "JPY",
+        "pair_name": "GBP/JPY",
+        "is_active": true,
+        "created_at": "2026-03-23 00:00:00"
+    },
+    {
+        "base_currency": "EUR",
+        "quote_currency": "NZD",
+        "pair_name": "EUR/NZD",
+        "is_active": true,
+        "created_at": "2026-03-23 00:00:00"
+    },
+    {
+        "base_currency": "GBP",
+        "quote_currency": "USD",
+        "pair_name": "GBP/USD",
+        "is_active": true,
+        "created_at": "2026-03-23 00:00:00"
+    }
+]

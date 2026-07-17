@@ -1,0 +1,10 @@
+[
+  {
+    "from_currency": "USD",
+    "to_currency": "DZD",
+    "amount": 876.02,
+    "timestamp": "2026-06-17T10:52:47.320Z",
+    "bot_name": "AutoConverter Bot",
+    "source": "bot"
+  }
+]

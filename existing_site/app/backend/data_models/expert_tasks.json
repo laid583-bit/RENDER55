@@ -1,0 +1,55 @@
+{
+    "title": "expert_tasks",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer",
+            "description": "Primary key, auto-increment"
+        },
+        "user_id": {
+            "type": "string",
+            "description": "User ID"
+        },
+        "from_currency": {
+            "type": "string",
+            "description": "Source currency code"
+        },
+        "to_currency": {
+            "type": "string",
+            "description": "Target currency code"
+        },
+        "amount": {
+            "type": "number",
+            "description": "Conversion amount"
+        },
+        "status": {
+            "type": "string",
+            "description": "Status active paused completed"
+        },
+        "executed_count": {
+            "type": "integer",
+            "description": "Number of executed conversions"
+        },
+        "skipped_count": {
+            "type": "integer",
+            "description": "Number of skipped conversions"
+        },
+        "total_fees": {
+            "type": "string",
+            "description": "JSON string of fees by currency"
+        },
+        "last_rate": {
+            "type": "number",
+            "description": "Last exchange rate observed"
+        }
+    },
+    "required": [
+        "id",
+        "user_id",
+        "from_currency",
+        "to_currency",
+        "amount",
+        "status"
+    ],
+    "create_only": true
+}

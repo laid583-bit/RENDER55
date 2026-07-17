@@ -1,0 +1,143 @@
+2026-05-02 01:04:37,454 - main - INFO - === Logging system initialized ===
+2026-05-02 01:04:37,454 - main - INFO - Log file: logs/app_20260502_010437.log
+2026-05-02 01:04:37,454 - main - INFO - Log level: INFO
+2026-05-02 01:04:37,454 - main - INFO - Timestamp: 20260502_010437
+2026-05-02 01:04:37,569 - main - WARNING - Failed to import module 'routers.aihub': cannot import name 'AnalyzePdfRequest' from 'schemas.aihub' (/workspace/app/backend/schemas/aihub.py)
+2026-05-02 01:04:38,495 - main - INFO - Included router: routers.auth.router
+2026-05-02 01:04:38,632 - main - INFO - Included router: routers.conversions.router
+2026-05-02 01:04:38,714 - main - INFO - Included router: routers.currency_pairs.router
+2026-05-02 01:04:39,012 - main - INFO - Included router: routers.deposits.router
+2026-05-02 01:04:39,163 - main - INFO - Included router: routers.expert_tasks.router
+2026-05-02 01:04:39,246 - main - INFO - Included router: routers.fee_settings.router
+2026-05-02 01:04:39,278 - main - INFO - Included router: routers.health.router
+2026-05-02 01:04:39,662 - main - INFO - Included router: routers.payments.router
+2026-05-02 01:04:39,715 - main - INFO - Included router: routers.rates.router
+2026-05-02 01:04:39,757 - main - INFO - Included router: routers.settings.router
+2026-05-02 01:04:39,969 - main - INFO - Included router: routers.storage.router
+2026-05-02 01:04:40,191 - main - INFO - Included router: routers.sub_admins.router
+2026-05-02 01:04:40,279 - main - INFO - Included router: routers.user.router
+2026-05-02 01:04:40,372 - main - INFO - Included router: routers.user_balances.router
+2026-05-02 01:04:40,603 - main - INFO - Included router: routers.withdrawals.router
+2026-05-02 01:04:40,604 - main - INFO - === Application startup initiated ===
+2026-05-02 01:04:40,604 - services.database - INFO - Ignore creating tables
+2026-05-02 01:04:40,604 - services.mock_data - INFO - Ignore initialize data
+2026-05-02 01:04:40,604 - services.auth - INFO - Ignore initialize admin
+2026-05-02 01:04:40,605 - main - INFO - === Application startup completed successfully ===
+2026-05-02 01:09:43,234 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-05-02 01:09:43,234 - core.database - WARNING - Database session maker not available, attempting lazy initialization...
+2026-05-02 01:09:43,234 - core.database - WARNING - Database not initialized, attempting lazy initialization...
+2026-05-02 01:09:43,234 - core.database - INFO - Starting database initialization...
+2026-05-02 01:09:43,234 - core.config - DEBUG - Read dynamic attribute database_url from environment variable DATABASE_URL
+2026-05-02 01:09:43,234 - core.database - INFO - Normalizing database URL for async compatibility...
+2026-05-02 01:09:43,235 - core.database - INFO - Creating async database engine...
+2026-05-02 01:09:43,235 - core.database - INFO - Using QueuePool with connection pooling for non-Lambda environment
+2026-05-02 01:09:43,281 - core.database - INFO - Database engine created successfully
+2026-05-02 01:09:43,281 - core.database - INFO - Creating async session maker...
+2026-05-02 01:09:43,281 - core.database - INFO - Async session maker created successfully
+2026-05-02 01:09:43,281 - core.database - INFO - Database connection initialized successfully
+2026-05-02 01:09:43,282 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-05-02 01:09:43,282 - core.database - INFO - 🔧 Starting table creation...
+2026-05-02 01:09:43,786 - dependencies.auth - DEBUG - Authentication required for request GET /api/v1/auth/me
+2026-05-02 01:09:43,911 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-05-02 01:09:43,911 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-05-02 01:09:44,750 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-05-02 01:09:44,750 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.8394s
+2026-05-02 01:09:44,817 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-05-02 01:09:44,818 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0007s
+2026-05-02 01:09:44,818 - routers.auth - INFO - [token/exchange] Received platform token exchange request
+2026-05-02 01:09:44,819 - core.config - DEBUG - Read dynamic attribute oidc_issuer_url from environment variable OIDC_ISSUER_URL
+2026-05-02 01:09:44,819 - routers.auth - DEBUG - [token/exchange] Verifying token with issuer: https://auth.atoms.dev/api/v1/oidc/platform/tokens/verify
+2026-05-02 01:09:45,827 - httpcore.connection - DEBUG - connect_tcp.started host='auth.atoms.dev' port=443 local_address=None timeout=5.0 socket_options=None
+2026-05-02 01:09:45,845 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7fd8c413f220>
+2026-05-02 01:09:45,846 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x7fd8c63b7a40> server_hostname='auth.atoms.dev' timeout=5.0
+2026-05-02 01:09:45,854 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7fd8c413ef80>
+2026-05-02 01:09:45,855 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2026-05-02 01:09:45,855 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-05-02 01:09:45,856 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2026-05-02 01:09:45,856 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-05-02 01:09:45,856 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2026-05-02 01:09:45,881 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sat, 02 May 2026 08:09:45 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'x-response-time', b'0.001s'), (b'x-request-id', b'07df998a0c3186b4218a0bfedb3f34ae'), (b'cf-cache-status', b'DYNAMIC'), (b'Content-Encoding', b'gzip'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9f558bad9ec7b81f-LAX')])
+2026-05-02 01:09:45,882 - httpx - INFO - HTTP Request: POST https://auth.atoms.dev/api/v1/oidc/platform/tokens/verify "HTTP/1.1 200 OK"
+2026-05-02 01:09:45,883 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2026-05-02 01:09:45,883 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-05-02 01:09:45,884 - httpcore.http11 - DEBUG - response_closed.started
+2026-05-02 01:09:45,884 - httpcore.http11 - DEBUG - response_closed.complete
+2026-05-02 01:09:45,884 - httpcore.connection - DEBUG - close.started
+2026-05-02 01:09:45,884 - httpcore.connection - DEBUG - close.complete
+2026-05-02 01:09:45,885 - routers.auth - DEBUG - [token/exchange] Issuer response status: 200
+2026-05-02 01:09:45,885 - routers.auth - DEBUG - [token/exchange] Issuer response body: {'success': True, 'data': {'exp': 1780300873, 'user_id': 1162782, 'email': 'laid2833@gmail.com', 'pv': 0}, 'message': 'Platform token verified', 'code': 0, 'timestamp': '2026-05-02T08:09:45.878019'}
+2026-05-02 01:09:45,886 - routers.auth - INFO - [token/exchange] Token verified, platform_user_id=1162782, email=laid2833@gmail.com
+2026-05-02 01:09:45,886 - core.config - DEBUG - Read dynamic attribute admin_user_id from environment variable ADMIN_USER_ID
+2026-05-02 01:09:45,886 - routers.auth - INFO - [token/exchange] User verified: platform_user_id=1162782, role=admin
+2026-05-02 01:09:45,887 - routers.auth - DEBUG - [token/exchange] User object for token issuance: id=1162782, email=laid2833@gmail.com, role=admin
+2026-05-02 01:09:45,887 - core.config - DEBUG - Read dynamic attribute jwt_expire_minutes from environment variable JWT_EXPIRE_MINUTES
+2026-05-02 01:09:45,887 - core.config - DEBUG - Read dynamic attribute jwt_secret_key from environment variable JWT_SECRET_KEY
+2026-05-02 01:09:45,887 - core.config - DEBUG - Read dynamic attribute jwt_algorithm from environment variable JWT_ALGORITHM
+2026-05-02 01:09:46,119 - core.auth - DEBUG - Authentication token created for user hash: c01b49cb
+2026-05-02 01:09:46,119 - routers.auth - INFO - [token/exchange] Token issued successfully for user_id=1162782, expires_at=2026-06-01 08:09:45.887254+00:00
+2026-05-02 01:09:46,120 - core.database - DEBUG - [DB_OP] Database session cleanup after 1.3032s
+2026-05-02 01:09:46,371 - core.database - INFO - Tables initialized successfully
+2026-05-02 01:09:46,371 - core.database - DEBUG - [DB_OP] Create tables completed in 3.0895s
+2026-05-02 01:09:46,433 - core.database - INFO - Lazy database initialization completed successfully
+2026-05-02 01:09:46,434 - core.database - DEBUG - [DB_OP] Database session created successfully in 3.2004s
+2026-05-02 01:09:46,434 - routers.auth - INFO - [token/exchange] Received platform token exchange request
+2026-05-02 01:09:46,434 - routers.auth - DEBUG - [token/exchange] Verifying token with issuer: https://auth.atoms.dev/api/v1/oidc/platform/tokens/verify
+2026-05-02 01:09:46,458 - httpcore.connection - DEBUG - connect_tcp.started host='auth.atoms.dev' port=443 local_address=None timeout=5.0 socket_options=None
+2026-05-02 01:09:46,465 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7fd8c61e4a90>
+2026-05-02 01:09:46,465 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x7fd8c63b4340> server_hostname='auth.atoms.dev' timeout=5.0
+2026-05-02 01:09:46,474 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7fd8c61e49d0>
+2026-05-02 01:09:46,474 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2026-05-02 01:09:46,474 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-05-02 01:09:46,474 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2026-05-02 01:09:46,474 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-05-02 01:09:46,475 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2026-05-02 01:09:46,517 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sat, 02 May 2026 08:09:46 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'x-response-time', b'0.001s'), (b'x-request-id', b'15bc782a938d4a8f671caefba25b7e71'), (b'cf-cache-status', b'DYNAMIC'), (b'Content-Encoding', b'gzip'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9f558bb17aaf08c7-LAX')])
+2026-05-02 01:09:46,517 - httpx - INFO - HTTP Request: POST https://auth.atoms.dev/api/v1/oidc/platform/tokens/verify "HTTP/1.1 200 OK"
+2026-05-02 01:09:46,518 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2026-05-02 01:09:46,518 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-05-02 01:09:46,518 - httpcore.http11 - DEBUG - response_closed.started
+2026-05-02 01:09:46,519 - httpcore.http11 - DEBUG - response_closed.complete
+2026-05-02 01:09:46,519 - httpcore.connection - DEBUG - close.started
+2026-05-02 01:09:46,519 - httpcore.connection - DEBUG - close.complete
+2026-05-02 01:09:46,519 - routers.auth - DEBUG - [token/exchange] Issuer response status: 200
+2026-05-02 01:09:46,519 - routers.auth - DEBUG - [token/exchange] Issuer response body: {'success': True, 'data': {'exp': 1780300873, 'user_id': 1162782, 'email': 'laid2833@gmail.com', 'pv': 0}, 'message': 'Platform token verified', 'code': 0, 'timestamp': '2026-05-02T08:09:46.513458'}
+2026-05-02 01:09:46,519 - routers.auth - INFO - [token/exchange] Token verified, platform_user_id=1162782, email=laid2833@gmail.com
+2026-05-02 01:09:46,520 - routers.auth - INFO - [token/exchange] User verified: platform_user_id=1162782, role=admin
+2026-05-02 01:09:46,520 - routers.auth - DEBUG - [token/exchange] User object for token issuance: id=1162782, email=laid2833@gmail.com, role=admin
+2026-05-02 01:09:46,520 - core.auth - DEBUG - Authentication token created for user hash: c01b49cb
+2026-05-02 01:09:46,520 - routers.auth - INFO - [token/exchange] Token issued successfully for user_id=1162782, expires_at=2026-06-01 08:09:46.520327+00:00
+2026-05-02 01:09:46,521 - core.database - DEBUG - [DB_OP] Database session cleanup after 3.2870s
+2026-05-02 01:09:53,416 - core.auth - DEBUG - Authentication token validated for user hash: c01b49cb
+2026-05-02 01:09:53,417 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-05-02 01:09:53,417 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-05-02 01:09:53,863 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-05-02 01:09:53,864 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.4466s
+2026-05-02 01:12:12,752 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-05-02 01:12:12,753 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-05-02 01:12:13,374 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-05-02 01:12:13,374 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.6221s
+2026-05-02 01:13:54,891 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-05-02 01:13:54,891 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0004s
+2026-05-02 01:13:55,278 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-05-02 01:13:55,279 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3879s
+2026-05-02 01:15:34,527 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-05-02 01:15:34,528 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0005s
+2026-05-02 01:15:34,903 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-05-02 01:15:34,904 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3767s
+2026-05-02 01:15:55,018 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-05-02 01:15:55,019 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0004s
+2026-05-02 01:15:55,527 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-05-02 01:15:55,528 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.5093s
+2026-05-02 01:17:03,909 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-05-02 01:17:03,910 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0004s
+2026-05-02 01:17:04,286 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-05-02 01:17:04,287 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3774s
+2026-05-02 01:17:55,195 - dependencies.auth - DEBUG - Authentication required for request GET /api/v1/auth/me
+2026-05-02 01:17:55,196 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-05-02 01:17:55,196 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-05-02 01:17:55,579 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-05-02 01:17:55,579 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3833s
+2026-05-02 01:18:04,847 - services.database - DEBUG - [DB_OP] Starting database close
+2026-05-02 01:18:04,979 - core.database - INFO - Database connection closed and engine disposed
+2026-05-02 01:18:04,979 - services.database - INFO - Database connections closed
+2026-05-02 01:18:04,979 - services.database - DEBUG - [DB_OP] Database close completed in 0.1321s

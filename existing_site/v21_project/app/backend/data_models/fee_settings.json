@@ -1,0 +1,41 @@
+{
+    "title": "fee_settings",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer",
+            "description": "Primary key, auto-increment"
+        },
+        "pair_id": {
+            "type": "integer",
+            "description": "Reference to currency_pairs id"
+        },
+        "fee_amount": {
+            "type": "number",
+            "description": "Fixed fee amount (fallback)"
+        },
+        "fee_percentage": {
+            "type": "number",
+            "description": "Fee percentage (priority over fixed amount)"
+        },
+        "fee_currency": {
+            "type": "string",
+            "description": "Fee currency USD or EUR"
+        },
+        "deposit_currency": {
+            "type": "string",
+            "description": "Deposit currency USD or EUR"
+        },
+        "updated_at": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Last update timestamp"
+        }
+    },
+    "required": [
+        "id",
+        "pair_id",
+        "fee_amount",
+        "fee_currency"
+    ]
+}

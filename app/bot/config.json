@@ -1,0 +1,18 @@
+{
+  "api_base_url": "http://localhost:3001",
+  "interval_seconds": 5,
+  "telegram_bot_token": "8789058626:AAFuvNjJjY2tDtI08wI8caDKBLhEnTdCi2c",
+  "telegram_chat_id": "",
+  "website_api_key": "bot-secure-key-2024",
+  "bot_name": "AutoConverter Bot",
+  "log_file": "bot.log",
+  "settings": {
+    "reverse_conversion": true,
+    "no_repeat_same_pair": true,
+    "execution_order": "sequential",
+    "cycle_interval": 5,
+    "min_amount": 10,
+    "max_amount": 1000
+  },
+  "vps_notes": "قم بتعديل api_base_url ليشير إلى عنوان موقعك الفعلي بعد النشر. أضف telegram_chat_id بعد إرسال /start للبوت."
+}

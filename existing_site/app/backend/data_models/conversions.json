@@ -1,0 +1,64 @@
+{
+    "title": "conversions",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer",
+            "description": "Primary key, auto-increment"
+        },
+        "user_id": {
+            "type": "string",
+            "description": "User ID"
+        },
+        "pair_id": {
+            "type": "integer",
+            "description": "Reference to currency_pairs id"
+        },
+        "from_currency": {
+            "type": "string",
+            "description": "Source currency"
+        },
+        "to_currency": {
+            "type": "string",
+            "description": "Target currency"
+        },
+        "from_amount": {
+            "type": "number",
+            "description": "Amount in source currency"
+        },
+        "to_amount": {
+            "type": "number",
+            "description": "Amount in target currency"
+        },
+        "exchange_rate": {
+            "type": "number",
+            "description": "Exchange rate used"
+        },
+        "fee_amount": {
+            "type": "number",
+            "description": "Fee charged"
+        },
+        "fee_percentage": {
+            "type": "number",
+            "description": "Fee percentage applied"
+        },
+        "fee_currency": {
+            "type": "string",
+            "description": "Fee currency"
+        },
+        "status": {
+            "type": "string",
+            "description": "Status pending completed cancelled"
+        }
+    },
+    "required": [
+        "id",
+        "user_id",
+        "pair_id",
+        "from_currency",
+        "to_currency",
+        "from_amount",
+        "to_amount",
+        "exchange_rate"
+    ]
+}

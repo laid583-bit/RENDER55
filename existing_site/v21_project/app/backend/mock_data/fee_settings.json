@@ -1,0 +1,58 @@
+[
+    {
+        "pair_id": 1,
+        "fee_amount": 10.0,
+        "fee_currency": "USD",
+        "deposit_currency": "USD",
+        "updated_at": "2026-03-23 00:00:00"
+    },
+    {
+        "pair_id": 2,
+        "fee_amount": 10.0,
+        "fee_currency": "EUR",
+        "deposit_currency": "EUR",
+        "updated_at": "2026-03-23 00:00:00"
+    },
+    {
+        "pair_id": 3,
+        "fee_amount": 10.0,
+        "fee_currency": "USD",
+        "deposit_currency": "USD",
+        "updated_at": "2026-03-23 00:00:00"
+    },
+    {
+        "pair_id": 4,
+        "fee_amount": 10.0,
+        "fee_currency": "EUR",
+        "deposit_currency": "EUR",
+        "updated_at": "2026-03-23 00:00:00"
+    },
+    {
+        "pair_id": 5,
+        "fee_amount": 10.0,
+        "fee_currency": "USD",
+        "deposit_currency": "USD",
+        "updated_at": "2026-03-23 00:00:00"
+    },
+    {
+        "pair_id": 6,
+        "fee_amount": 10.0,
+        "fee_currency": "USD",
+        "deposit_currency": "USD",
+        "updated_at": "2026-03-23 00:00:00"
+    },
+    {
+        "pair_id": 7,
+        "fee_amount": 10.0,
+        "fee_currency": "EUR",
+        "deposit_currency": "EUR",
+        "updated_at": "2026-03-23 00:00:00"
+    },
+    {
+        "pair_id": 8,
+        "fee_amount": 10.0,
+        "fee_currency": "USD",
+        "deposit_currency": "USD",
+        "updated_at": "2026-03-23 00:00:00"
+    }
+]

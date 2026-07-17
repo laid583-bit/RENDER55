@@ -1,0 +1,237 @@
+2026-04-29 01:37:58,278 - main - INFO - === Logging system initialized ===
+2026-04-29 01:37:58,278 - main - INFO - Log file: logs/app_20260429_013758.log
+2026-04-29 01:37:58,279 - main - INFO - Log level: INFO
+2026-04-29 01:37:58,279 - main - INFO - Timestamp: 20260429_013758
+2026-04-29 01:37:58,293 - main - WARNING - Failed to import module 'routers.aihub': cannot import name 'AnalyzePdfRequest' from 'schemas.aihub' (/workspace/app/backend/schemas/aihub.py)
+2026-04-29 01:37:58,353 - main - INFO - Included router: routers.auth.router
+2026-04-29 01:37:58,407 - main - INFO - Included router: routers.conversions.router
+2026-04-29 01:37:58,454 - main - INFO - Included router: routers.currency_pairs.router
+2026-04-29 01:37:58,504 - main - INFO - Included router: routers.deposits.router
+2026-04-29 01:37:58,562 - main - INFO - Included router: routers.expert_tasks.router
+2026-04-29 01:37:58,604 - main - INFO - Included router: routers.fee_settings.router
+2026-04-29 01:37:58,610 - main - INFO - Included router: routers.health.router
+2026-04-29 01:37:58,638 - main - INFO - Included router: routers.payments.router
+2026-04-29 01:37:58,651 - main - INFO - Included router: routers.rates.router
+2026-04-29 01:37:58,673 - main - INFO - Included router: routers.settings.router
+2026-04-29 01:37:58,716 - main - INFO - Included router: routers.storage.router
+2026-04-29 01:37:58,767 - main - INFO - Included router: routers.sub_admins.router
+2026-04-29 01:37:58,775 - main - INFO - Included router: routers.user.router
+2026-04-29 01:37:58,818 - main - INFO - Included router: routers.user_balances.router
+2026-04-29 01:37:58,919 - main - INFO - Included router: routers.withdrawals.router
+2026-04-29 01:37:58,920 - main - INFO - === Application startup initiated ===
+2026-04-29 01:37:58,920 - services.database - INFO - Ignore creating tables
+2026-04-29 01:37:58,920 - services.mock_data - INFO - Ignore initialize data
+2026-04-29 01:37:58,921 - services.auth - INFO - Ignore initialize admin
+2026-04-29 01:37:58,921 - main - INFO - === Application startup completed successfully ===
+2026-04-29 01:38:04,570 - core.config - DEBUG - Read dynamic attribute jwt_secret_key from environment variable JWT_SECRET_KEY
+2026-04-29 01:38:04,570 - core.config - DEBUG - Read dynamic attribute jwt_algorithm from environment variable JWT_ALGORITHM
+2026-04-29 01:38:04,583 - core.auth - DEBUG - Authentication token validated for user hash: c01b49cb
+2026-04-29 01:38:04,587 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-29 01:38:04,587 - core.database - WARNING - Database session maker not available, attempting lazy initialization...
+2026-04-29 01:38:04,587 - core.database - WARNING - Database not initialized, attempting lazy initialization...
+2026-04-29 01:38:04,587 - core.database - INFO - Starting database initialization...
+2026-04-29 01:38:04,587 - core.config - DEBUG - Read dynamic attribute database_url from environment variable DATABASE_URL
+2026-04-29 01:38:04,587 - core.database - INFO - Normalizing database URL for async compatibility...
+2026-04-29 01:38:04,590 - core.database - INFO - Creating async database engine...
+2026-04-29 01:38:04,590 - core.database - INFO - Using QueuePool with connection pooling for non-Lambda environment
+2026-04-29 01:38:04,648 - core.database - INFO - Database engine created successfully
+2026-04-29 01:38:04,648 - core.database - INFO - Creating async session maker...
+2026-04-29 01:38:04,648 - core.database - INFO - Async session maker created successfully
+2026-04-29 01:38:04,648 - core.database - INFO - Database connection initialized successfully
+2026-04-29 01:38:04,648 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-04-29 01:38:04,649 - core.database - INFO - 🔧 Starting table creation...
+2026-04-29 01:38:06,446 - core.database - INFO - Tables initialized successfully
+2026-04-29 01:38:06,446 - core.database - DEBUG - [DB_OP] Create tables completed in 1.7978s
+2026-04-29 01:38:06,510 - core.database - INFO - Lazy database initialization completed successfully
+2026-04-29 01:38:06,510 - core.database - DEBUG - [DB_OP] Database session created successfully in 1.9237s
+2026-04-29 01:38:07,149 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-29 01:38:07,150 - core.database - DEBUG - [DB_OP] Database session cleanup after 2.5629s
+2026-04-29 01:39:05,438 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-29 01:39:05,438 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0004s
+2026-04-29 01:39:05,815 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-29 01:39:05,816 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3783s
+2026-04-29 01:40:05,337 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-29 01:40:05,337 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0005s
+2026-04-29 01:40:05,714 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-29 01:40:05,715 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3783s
+2026-04-29 01:41:05,348 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-29 01:41:05,348 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0004s
+2026-04-29 01:41:05,783 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-29 01:41:05,784 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.4363s
+2026-04-29 01:42:04,894 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-29 01:42:04,895 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0005s
+2026-04-29 01:42:05,272 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-29 01:42:05,273 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3782s
+2026-04-29 01:43:05,364 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-29 01:43:05,364 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0004s
+2026-04-29 01:43:05,739 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-29 01:43:05,739 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3755s
+2026-04-29 01:44:13,130 - core.auth - DEBUG - Authentication token validated for user hash: c01b49cb
+2026-04-29 01:44:13,153 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-29 01:44:13,153 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0004s
+2026-04-29 01:44:13,713 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-29 01:44:13,714 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.5609s
+2026-04-29 01:45:14,325 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-29 01:45:14,325 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0005s
+2026-04-29 01:45:14,701 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-29 01:45:14,702 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3769s
+2026-04-29 01:46:14,334 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-29 01:46:14,334 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0004s
+2026-04-29 01:46:14,711 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-29 01:46:14,712 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3782s
+2026-04-29 01:47:17,971 - core.auth - DEBUG - Authentication token validated for user hash: c01b49cb
+2026-04-29 01:47:17,992 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-29 01:47:17,992 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0004s
+2026-04-29 01:47:18,427 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-29 01:47:18,428 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.4366s
+2026-04-29 01:48:19,280 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-29 01:48:19,281 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0005s
+2026-04-29 01:48:19,655 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-29 01:48:19,656 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3752s
+2026-04-29 01:49:19,039 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-29 01:49:19,040 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0005s
+2026-04-29 01:49:19,540 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-29 01:49:19,541 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.5015s
+2026-04-29 01:50:22,181 - core.auth - DEBUG - Authentication token validated for user hash: c01b49cb
+2026-04-29 01:50:22,200 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-29 01:50:22,201 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-04-29 01:50:22,637 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-29 01:50:22,637 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.4371s
+2026-04-29 01:51:22,926 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-29 01:51:22,926 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0005s
+2026-04-29 01:51:23,303 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-29 01:51:23,304 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3778s
+2026-04-29 01:52:07,086 - core.auth - DEBUG - Authentication token validated for user hash: c01b49cb
+2026-04-29 01:52:07,110 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-29 01:52:07,110 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0004s
+2026-04-29 01:52:07,488 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-29 01:52:07,489 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3790s
+2026-04-29 01:53:08,739 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-29 01:53:08,739 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0005s
+2026-04-29 01:53:09,174 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-29 01:53:09,175 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.4364s
+2026-04-29 01:54:07,544 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-29 01:54:07,545 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0005s
+2026-04-29 01:54:07,921 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-29 01:54:07,921 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3774s
+2026-04-29 01:55:08,335 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-29 01:55:08,336 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-04-29 01:55:08,831 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-29 01:55:08,832 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.4964s
+2026-04-29 01:56:12,636 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-29 01:56:12,637 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0005s
+2026-04-29 01:56:13,072 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-29 01:56:13,072 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.4360s
+2026-04-29 01:57:10,043 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-29 01:57:10,043 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0005s
+2026-04-29 01:57:10,419 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-29 01:57:10,420 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3776s
+2026-04-29 01:58:15,457 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-29 01:58:15,457 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0008s
+2026-04-29 01:58:15,832 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-29 01:58:15,833 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3764s
+2026-04-29 01:59:40,118 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-29 01:59:40,118 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0005s
+2026-04-29 01:59:40,553 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-29 01:59:40,554 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.4363s
+2026-04-29 02:01:28,439 - core.auth - DEBUG - Authentication token validated for user hash: c01b49cb
+2026-04-29 02:01:28,441 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-29 02:01:28,442 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-04-29 02:01:28,940 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-29 02:01:28,941 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.4998s
+2026-04-29 02:02:32,360 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-29 02:02:32,360 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0004s
+2026-04-29 02:02:32,735 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-29 02:02:32,736 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3762s
+2026-04-29 02:03:27,311 - core.auth - DEBUG - Authentication token validated for user hash: c01b49cb
+2026-04-29 02:03:27,319 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-29 02:03:27,319 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-04-29 02:03:27,755 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-29 02:03:27,756 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.4369s
+2026-04-29 02:05:15,258 - core.auth - DEBUG - Authentication token validated for user hash: c01b49cb
+2026-04-29 02:05:15,264 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-29 02:05:15,264 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-04-29 02:05:15,640 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-29 02:05:15,641 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3771s
+2026-04-29 02:06:15,610 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-29 02:06:15,611 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0006s
+2026-04-29 02:06:15,988 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-29 02:06:15,989 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3785s
+2026-04-29 02:07:16,435 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-29 02:07:16,435 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0004s
+2026-04-29 02:07:16,995 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-29 02:07:16,996 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.5613s
+2026-04-29 02:08:16,743 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-29 02:08:16,744 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0006s
+2026-04-29 02:08:17,119 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-29 02:08:17,120 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3768s
+2026-04-29 02:09:16,415 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-29 02:09:16,416 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0005s
+2026-04-29 02:09:16,791 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-29 02:09:16,792 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3763s
+2026-04-29 02:10:15,619 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-29 02:10:15,620 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0007s
+2026-04-29 02:10:16,059 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-29 02:10:16,060 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.4403s
+2026-04-29 02:11:16,614 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-29 02:11:16,614 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0005s
+2026-04-29 02:11:16,991 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-29 02:11:16,991 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3776s
+2026-04-29 02:12:33,674 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-29 02:12:33,675 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0004s
+2026-04-29 02:12:34,174 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-29 02:12:34,175 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.5003s
+2026-04-29 02:13:33,640 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-29 02:13:33,640 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0006s
+2026-04-29 02:13:34,078 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-29 02:13:34,079 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.4389s
+2026-04-29 02:13:40,689 - core.auth - DEBUG - Authentication token validated for user hash: c01b49cb
+2026-04-29 02:13:40,701 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-29 02:13:40,701 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0004s
+2026-04-29 02:13:41,077 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-29 02:13:41,078 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3774s
+2026-04-29 02:14:41,397 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-29 02:14:41,397 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0005s
+2026-04-29 02:14:41,772 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-29 02:14:41,773 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3760s
+2026-04-29 02:15:41,349 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-29 02:15:41,350 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0004s
+2026-04-29 02:15:41,787 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-29 02:15:41,788 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.4392s
+2026-04-29 02:16:41,371 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-29 02:16:41,372 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0004s
+2026-04-29 02:16:41,746 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-29 02:16:41,746 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3750s
+2026-04-29 02:17:41,388 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-29 02:17:41,390 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0013s
+2026-04-29 02:17:41,890 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-29 02:17:41,891 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.5025s
+2026-04-29 02:18:40,184 - core.auth - DEBUG - Authentication token validated for user hash: c01b49cb
+2026-04-29 02:18:40,203 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-29 02:18:40,204 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0004s
+2026-04-29 02:18:40,641 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-29 02:18:40,642 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.4387s
+2026-04-29 02:19:41,347 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-29 02:19:41,348 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0005s
+2026-04-29 02:19:41,724 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-29 02:19:41,725 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3781s
+2026-04-29 02:20:41,583 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-29 02:20:41,583 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0004s
+2026-04-29 02:20:41,958 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-29 02:20:41,959 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3762s
+2026-04-29 02:21:40,596 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-29 02:21:40,597 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0006s
+2026-04-29 02:21:41,033 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-29 02:21:41,034 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.4381s
+2026-04-29 02:22:40,594 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-29 02:22:40,595 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0005s
+2026-04-29 02:22:40,970 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-29 02:22:40,971 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3766s
+2026-04-29 02:23:41,674 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-04-29 02:23:41,674 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0005s
+2026-04-29 02:23:42,174 - services.rates_service - WARNING - FIXER_API_KEY not set, using fallback rates
+2026-04-29 02:23:42,175 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.5009s
+2026-04-29 02:23:50,846 - services.database - DEBUG - [DB_OP] Starting database close
+2026-04-29 02:23:50,911 - core.database - INFO - Database connection closed and engine disposed
+2026-04-29 02:23:50,912 - services.database - INFO - Database connections closed
+2026-04-29 02:23:50,912 - services.database - DEBUG - [DB_OP] Database close completed in 0.0659s

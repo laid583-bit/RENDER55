@@ -1,0 +1,51 @@
+{
+    "title": "withdrawals",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer",
+            "description": "Primary key, auto-increment"
+        },
+        "user_id": {
+            "type": "string",
+            "description": "User ID"
+        },
+        "amount": {
+            "type": "number",
+            "description": "Withdrawal amount"
+        },
+        "currency": {
+            "type": "string",
+            "description": "Withdrawal currency code"
+        },
+        "payment_method": {
+            "type": "string",
+            "description": "Withdrawal method (paypal, skrill, usdt, btc, etc.)"
+        },
+        "wallet_address": {
+            "type": "string",
+            "description": "Wallet address or account identifier"
+        },
+        "status": {
+            "type": "string",
+            "description": "Withdrawal status: pending, processing, completed, rejected"
+        },
+        "notes": {
+            "type": "string",
+            "description": "Optional notes"
+        },
+        "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Creation timestamp"
+        }
+    },
+    "required": [
+        "id",
+        "user_id",
+        "amount",
+        "currency",
+        "payment_method",
+        "status"
+    ]
+}
