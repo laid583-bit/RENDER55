@@ -1,9 +1,9 @@
 {
-  "api_base_url": "http://localhost:3001",
+  "api_base_url": "https://tbb-jchj.onrender.com",
   "interval_seconds": 5,
-  "telegram_bot_token": "8789058626:AAFuvNjJjY2tDtI08wI8caDKBLhEnTdCi2c",
+  "telegram_bot_token": "8789058626:AAFSdpz12DuX_Kbjq9OGCsL644qUZ9Vfh8M",
   "telegram_chat_id": "",
-  "website_api_key": "bot-secure-key-2024",
+  "website_api_key": "kl@__KL28",
   "bot_name": "AutoConverter Bot",
   "log_file": "bot.log",
   "settings": {
