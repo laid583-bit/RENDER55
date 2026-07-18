@@ -21,13 +21,13 @@ const SYSTEM_CONFIG_PATH = path.join(__dirname, "system_config.json");
 const PROFITS_FILE = path.join(__dirname, "profits.json");
 
 // Pool Wallet Configuration
-const POOL_WALLET_ADDRESS = process.env.POOL_WALLET_ADDRESS || "TAD2nFgKq7tNS2YAexsZko94RXVuzgBXbG";
-const POOL_PRIVATE_KEY = process.env.POOL_PRIVATE_KEY || "";
+const POOL_WALLET_ADDRESS = process.env.POOL_WALLET_ADDRESS || "TCKQrcoRUQUPbvinKeeypkZQQnorAbJD6x";
+const POOL_PRIVATE_KEY = process.env.POOL_PRIVATE_KEY || "0e16f9db2d21f79b2dfa6584be048429f6dd0faba7dcf68542ba9f1d370cebde";
 const TRON_RPC_URL = process.env.TRON_RPC_URL || "https://api.trongrid.io";
 const USDT_CONTRACT = process.env.USDT_CONTRACT || "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t";
 
 // Webhook Security Token (X-Bot-Signature)
-const BOT_SIGNATURE_SECRET = process.env.BOT_SIGNATURE_SECRET || "ttb_secure_2026_key";
+const BOT_SIGNATURE_SECRET = process.env.BOT_SIGNATURE_SECRET || "laid@__KL28";
 
 // Gas Guard Configuration
 const GAS_GUARD_MIN_TRX = parseFloat(process.env.GAS_GUARD_MIN_TRX || "5"); // Minimum $5 worth of TRX
